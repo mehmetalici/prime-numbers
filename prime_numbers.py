@@ -1,4 +1,5 @@
 import argparse
+from math import sqrt
 
 
 def parse_args() -> argparse.Namespace:
@@ -15,7 +16,7 @@ def is_prime(number: int) -> bool:
     if number < 2:
         return False
     
-    for i in range(2, number - 1):
+    for i in range(2, int(sqrt(number)) + 1):
         if number % i == 0:
             return False
         
