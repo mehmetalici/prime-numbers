@@ -38,6 +38,6 @@ def find_primes(start_after: int, count: int) -> list:
 if __name__ == "__main__":
     args = parse_args()
     count = 100
-    start_after = args.number
+    start_after = int(args.number)
     numbers = find_primes(start_after=start_after, count=count)
     print(numbers)
