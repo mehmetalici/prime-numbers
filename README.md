@@ -17,3 +17,9 @@ Step-by-step instructions to run the program:
     python prime_numbers.py 3000
     ```
 
+## Complexity Analysis
+The algorithm is comprised of two functions: `is_prime` and `find_primes`. `is_prime` iterates from 2 until the number and therefore it is $O(n)$. Moreover, `find_primes` loops over 100 times and uses `is_prime` at each iteration. Therefore, its complexity is $O(n*m)$. 
+
+If $m$ is kept constant, which is 100 in this program, the complexity of the algorithm can be reduced to $O(n)$. 
+
+Note that for big numbers, the program takes too long to complete. Hence, the algorithm shall be optimized in [this issue](https://github.com/mehmetalici/prime-numbers/issues/1).  
